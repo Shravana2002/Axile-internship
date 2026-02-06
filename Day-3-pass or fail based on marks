@@ -1,1 +1,12 @@
+marks = float(input("Enter your marks: "))
+if marks < 35:
+    print("Result: FAIL")
+elif marks < 50:
+    print("Result: PASS - Grade C")
+elif marks < 70:
+    print("Result: PASS - Grade B")
+elif marks <= 100:
+    print("Result: PASS - Grade A ")
+else:
+    print("Invalid marks entered")
 
