@@ -1,1 +1,47 @@
 
+/* Apply background color to whole page */
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+}
+
+/* Style container */
+.container {
+    background-color: white;
+    width: 400px;
+    margin: 50px auto;          /* Margin */
+    padding: 20px;              /* Padding */
+    border: 2px solid black;    /* Border */
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Heading styling */
+h1 {
+    color: darkblue;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Paragraph styling */
+p {
+    color: gray;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: darkgreen;
+}
