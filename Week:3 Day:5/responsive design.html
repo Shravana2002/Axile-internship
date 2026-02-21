@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Layout Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            width: 25%;   /* Percentage width */
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .sidebar {
+            width: 30%;   /* Percentage width */
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .content {
+            width: 70%;   /* Percentage width */
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* ===== Media Query for Mobile View ===== */
+        @media screen and (max-width: 768px) {
+
+            nav a {
+                width: 100%;   /* Full width in mobile */
+                float: none;
+            }
+
+            .sidebar,
+            .content {
+                width: 100%;   /* Stack elements */
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Responsive Website</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+            <p>This sidebar takes 30% width on desktop and 100% on mobile.</p>
+        </div>
+
+        <div class="content">
+            <h2>Main Content</h2>
+            <p>This content section takes 70% width on desktop and 100% on mobile.</p>
+            <p>Resize the browser window to see the responsive effect.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Responsive Design </p>
+    </footer>
+
+</body>
+</html>
