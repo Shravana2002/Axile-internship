@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Basic Programs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <h1>JavaScript Mini Project</h1>
+
+    <!-- 1. Alert on Button Click -->
+    <section>
+        <h2>1. Alert Example</h2>
+        <button onclick="showAlert()">Click Me</button>
+    </section>
+
+    <!-- 2. Form Validation -->
+    <section>
+        <h2>2. Form Validation</h2>
+        <form id="myForm">
+            <label>Name:</label>
+            <input type="text" id="name"><br><br>
+
+            <label>Email:</label>
+            <input type="email" id="email"><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- 3. Simple Calculator -->
+    <section>
+        <h2>3. Simple Calculator</h2>
+        <input type="text" id="num1" placeholder="Enter first number">
+        <input type="text" id="num2" placeholder="Enter second number"><br><br>
+
+        <button onclick="calculate('+')">Add</button>
+        <button onclick="calculate('-')">Subtract</button>
+        <button onclick="calculate('*')">Multiply</button>
+        <button onclick="calculate('/')">Divide</button>
+
+        <p id="result"></p>
+    </section>
+
+    <!-- 4. Change Text on Click -->
+    <section>
+        <h2>4. Change Text Example</h2>
+        <p id="text">Original Text</p>
+        <button onclick="changeText()">Change Text</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
